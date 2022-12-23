@@ -1,3 +1,11 @@
+
+# mysql docker container name
+MYSQL_CONTAINER_NAME=lion-mysql
+
+# mysql root password
+MYSQL_ROOT_PW=password
+
+
 echo "/////////////////////"
 echo "apt-get update..."
 echo "/////////////////////"
@@ -37,3 +45,7 @@ echo \
 sudo apt-get update -y
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+
+sudo docker run -d --name $MYSQL_CONTAINER_NAME -p 3306:3306 -e MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PW mysql
+
+

@@ -5,11 +5,11 @@ echo "/////////////////////"
 sudo apt-get update -y
 
 echo "/////////////////////"
-echo "apt-get update done!
+echo "apt-get update done!"
 echo "/////////////////////"
 
 echo "/////////////////////"
-echo "install libraries...
+echo "install libraries..."
 echo "/////////////////////"
 
 sudo apt-get install \
@@ -19,7 +19,7 @@ sudo apt-get install \
     lsb-release -y
 
 echo "/////////////////////"
-echo "install done!
+echo "install done!"
 echo "/////////////////////"
 
 echo "////////////////////"
